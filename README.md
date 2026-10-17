@@ -1,3 +1,5 @@
+<img width="1223" height="598" alt="image" src="https://github.com/user-attachments/assets/74283e9f-b85a-4fa3-b393-dc84aa8b11f1" />
+
 # ApiWatch: Intelligent API Monitoring & Alert System
 
 ApiWatch checks responses from external APIs (patient and operational data), detects anomalies, asks an LLM to write a short human-readable alert, stores it in Supabase, and shows everything in a React dashboard. It can also email a report.
