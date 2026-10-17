@@ -105,3 +105,8 @@ export async function resolveAlertById(id) {
   if (!data) throw new AppError(404, 'Active alert not found. It may already be resolved.');
   return data;
 }
+
+export async function pingDatabase() {
+  const { error } = await getSupabase().from(TABLE).select('id').limit(1);
+  if (error) dbFail(error, 'checking database health');
+}
