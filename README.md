@@ -142,7 +142,7 @@ Thresholds are configurable (`RESPONSE_TIME_WARN_MS`, `RESPONSE_TIME_CRITICAL_MS
 | 0 records on a failed response | `ZERO_RECORDS` | medium |
 | Error status but records returned | `INCONSISTENT_DATA` | medium |
 | Negative record count | `INCONSISTENT_DATA` | high |
-| Negative response time | `INCONSISTENT_DATA` | medium |
+| Negative response time | `INCONSISTENT_DATA` | medium | 
 | Missing `status_code`, `response_time_ms`, or `records_returned` | `MISSING_DATA` | medium |
 
 An alert's severity is the highest severity among its anomalies. Items without a usable `api_name`, or with non-numeric values, are rejected and reported in the response without failing the rest of the batch.
